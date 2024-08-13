@@ -9,28 +9,5 @@ GitHub Web Portfolio test
     <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 (선택 사항) -->
     <script src="script.js" defer></script> <!-- JavaScript 파일 링크 (선택 사항) -->
 </head>
-<body>
-    <header>
-        <h1>환영합니다!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#contact">연락처</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>소개</h2>
-            <p>이 웹페이지는 구글 드라이브를 이용하여 만든 샘플 페이지입니다.</p>
-        </section>
-        <section id="contact">
-            <h2>연락처</h2>
-            <p>이메일: example@example.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 내 웹사이트</p>
-    </footer>
-</body>
+<div class="sc-etAVug ezfwXS"><ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light sc-jOQpHc cyYTOA" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-77510-1-/discover" style="padding-left: 24px;"><span class="ant-menu-title-content"><a class="sc-cYRmzm ctvVxE" href="/discover">아이템 발굴 </a></span></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub1" aria-controls="rc-menu-uuid-77510-1-sub1-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">아이템 분석 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub2" aria-controls="rc-menu-uuid-77510-1-sub2-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">마케팅 도구 <div class="sc-gHbYXZ ioWTgn tag-div">NEW</div></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub3" aria-controls="rc-menu-uuid-77510-1-sub3-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">모니터링 <div class="sc-gHbYXZ ioWTgn tag-div">NEW</div></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub4" aria-controls="rc-menu-uuid-77510-1-sub4-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">쿠팡 분석 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub5" aria-controls="rc-menu-uuid-77510-1-sub5-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">커뮤니티 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-77510-1-/education" style="padding-left: 24px;"><span class="ant-menu-title-content"><a class="sc-cYRmzm ctvVxE" href="/education">무료 강의 </a></span></li></ul><div aria-hidden="true" style="display: none;"></div><img src="/static/media/banner_extension.1042dc41.png" alt="banner" class="sc-fGjrnr dPfoLt"></div>
 </html>
