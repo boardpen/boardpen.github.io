@@ -1,13 +1,28 @@
 # boardpen.github.io
 GitHub Web Portfolio test
 
-<html lang="ko">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 구글 드라이브 웹페이지</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 (선택 사항) -->
-    <script src="script.js" defer></script> <!-- JavaScript 파일 링크 (선택 사항) -->
-</head>
-<div class="sc-etAVug ezfwXS"><ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light sc-jOQpHc cyYTOA" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-77510-1-/discover" style="padding-left: 24px;"><span class="ant-menu-title-content"><a class="sc-cYRmzm ctvVxE" href="/discover">아이템 발굴 </a></span></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub1" aria-controls="rc-menu-uuid-77510-1-sub1-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">아이템 분석 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub2" aria-controls="rc-menu-uuid-77510-1-sub2-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">마케팅 도구 <div class="sc-gHbYXZ ioWTgn tag-div">NEW</div></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub3" aria-controls="rc-menu-uuid-77510-1-sub3-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">모니터링 <div class="sc-gHbYXZ ioWTgn tag-div">NEW</div></div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub4" aria-controls="rc-menu-uuid-77510-1-sub4-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">쿠팡 분석 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-submenu ant-menu-submenu-inline" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-77510-1-sub5" aria-controls="rc-menu-uuid-77510-1-sub5-popup" style="padding-left: 24px;"><span class="ant-menu-title-content"><div class="sc-dExYQz hwklSM">커뮤니티 </div></span><i class="ant-menu-submenu-arrow"></i></div></li><li class="ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-77510-1-/education" style="padding-left: 24px;"><span class="ant-menu-title-content"><a class="sc-cYRmzm ctvVxE" href="/education">무료 강의 </a></span></li></ul><div aria-hidden="true" style="display: none;"></div><img src="/static/media/banner_extension.1042dc41.png" alt="banner" class="sc-fGjrnr dPfoLt"></div>
-</html>
+    <title>URL Fetcher</title>
+    <script>
+        async function fetchURL() {
+            const urlInput = document.getElementById('urlInput').value;
+            try {
+                const response = await fetch(urlInput);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const html = await response.text();
+                // 여기에 가져온 HTML을 처리하는 로직을 추가할 수 있습니다.
+                console.log(html); // 가져온 HTML을 콘솔에 출력합니다.
+                alert("HTML fetched successfully! Check the console for the output.");
+            } catch (error) {
+                console.error('Error fetching the URL:', error);
+                alert('Failed to fetch the URL.');
+            }
+        }
+    </script></head><body>
+    <h1>URL Fetcher</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL here" style="width: 300px;">
+    <button onclick="fetchURL()">Fetch URL</button></body></html>
