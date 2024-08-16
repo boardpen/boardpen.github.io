@@ -1,30 +1,70 @@
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Fetcher</title>
+    <title>Website HTML Fetcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Website HTML Fetcher</h1>
+        <input type="text" id="url" placeholder="Enter the website URL">
+        <button onclick="fetchHTML()">Fetch HTML</button>
+        <h3>HTML Output:</h3>
+        <pre id="output"></pre>
+    </div>
     <script>
-        async function fetchURL() {
-            const urlInput = document.getElementById('urlInput').value;
-            try {
-                const response = await fetch(urlInput);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const html = await response.text();
-                // 여기에 가져온 HTML을 처리하는 로직을 추가할 수 있습니다.
-                console.log(html); // 가져온 HTML을 콘솔에 출력합니다.
-                alert("HTML fetched successfully! Check the console for the output.");
-            } catch (error) {
-                console.error('Error fetching the URL:', error);
-                alert('Failed to fetch the URL.');
-            }
+        function fetchHTML() {
+            const url = document.getElementById('url').value;
+            fetch(`/get-html?url=${encodeURIComponent(url)}`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('output').textContent = data;
+                })
+                .catch(error => {
+                    document.getElementById('output').textContent = 'An error occurred: ' + error;
+                });
         }
     </script>
-    </head>
-    <body>
-    <h1>URL Fetcher</h1>
-    <input type="text" id="urlInput" placeholder="Enter URL here" style="width: 300px;">
-    <button onclick="fetchURL()">Fetch URL</button>
-    </body>
+</body>
 </html>
